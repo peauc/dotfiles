@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/peau_c/bin/moulinorme `find -name "*.c" -print`

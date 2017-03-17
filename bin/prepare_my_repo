@@ -1,0 +1,4 @@
+#!/bin/bash
+blih -u clement.peau@epitech.eu repository create $1
+blih -u clement.peau@epitech.eu repository setacl $1 ramassage-tek r
+git clone git@git.epitech.eu:/$2/$1

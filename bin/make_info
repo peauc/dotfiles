@@ -1,0 +1,4 @@
+cp ~/bin/src/Makefile .
+mkdir src inc
+cp ~/bin/src/main_info.c src/main.c
+cp ~/bin/src/default.h inc/default.h
