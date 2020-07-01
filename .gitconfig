@@ -1,0 +1,7 @@
+[user]
+	name = Clement Peau
+	email = clement.peau@gmail.com
+
+[credential]
+    helper = store --file /home/peauc/.git-credentials
+    helper = cache --timeout 30000

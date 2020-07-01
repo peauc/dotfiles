@@ -1,5 +1,0 @@
-function fish_prompt
-	set_color purple
-	echo $LOGNAME'|'(pwd) '>'
-	set_color normal
-end

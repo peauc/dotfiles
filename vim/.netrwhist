@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/peau_c/WebstormProjects/Test01/src/js'
-let g:netrw_dirhist_2='/home/peau_c/toto'
-let g:netrw_dirhist_3='/home/peau_c/c++/cpp_d03/ex15'
-let g:netrw_dirhist_4='/home/peau_c/c++/cpp_d03/ex00'
-let g:netrw_dirhist_5='/home/peau_c/bin'
