@@ -5,3 +5,7 @@
 [credential]
     helper = store --file /home/peauc/.git-credentials
     helper = cache --timeout 30000
+[branch]
+	autosetupmerge = always
+[push]
+	default = current

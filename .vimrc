@@ -72,6 +72,13 @@ nmap <silent> _Y :%w !xsel --clipboard<CR><CR>
 ""Copy selected lines
 vmap <silent> _y :w !xsel --clipboard<CR><CR>
 
+" Clear highlight on double escape
+nnoremap <esc><esc> :noh<return>
+
+" More untuitive page navigation
+noremap J L
+noremap K H
+
 "" Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -81,6 +88,13 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+"" Set default split position
+set splitbelow
+set splitright
+
+"" Enable terminal creation
+nmap <C-T> :vert terminal<return>
 
 "" Set the clipboard to be the system's
 set clipboard=unnamed
@@ -124,13 +138,21 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown'
 
 " NerdTree Plugin ------
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$']	
 " ----------------------
 
+" CTRLP Plugin ---------
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|.pyc)$'
+" ----------------------
+"
 " -------VueJS----------
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue
 let g:vim_vue_plugin_load_full_syntax = 1
 let g:vim_vue_plugin_debug = 1
 " ----------------------
+
+" YCM -----------------
+let g:ycm_add_preview_to_completeopt = 'menu,menuone,popup'
 
 " Syntastic Plugin -----
 set statusline+=%#warningmsg#
