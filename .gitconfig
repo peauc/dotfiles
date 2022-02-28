@@ -9,3 +9,7 @@
 	autosetupmerge = always
 [push]
 	default = current
+[merge]
+	tool = meld
+[core]
+	autocrlf = input

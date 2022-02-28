@@ -2,7 +2,6 @@ syntax off
 filetype plugin indent off
 " Plugin Manager - Plug-
 call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'frazrepo/vim-rainbow'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -108,7 +107,12 @@ set ttyfast
 "" Re-execute the last command but with sudo :)
 cmap w!! w !sudo tee > /dev/null %
 
-
+"" General config
+set tabstop=4 
+set softtabstop=4 
+set shiftwidth=4 
+set expandtab
+set autoindent
 "" Python config
 au BufNewFile, BufRead *.py
     \ set tabstop=4 |
@@ -118,8 +122,8 @@ au BufNewFile, BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix |
+    \ set iskeyword-=_ |
 au BufRead, BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
 set cc=120
 highlight ColorColumn ctermbg=1
 let g:python_highlight_all=1
