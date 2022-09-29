@@ -1,3 +1,7 @@
+" Nvim conf
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+
 syntax off
 filetype plugin indent off
 " Plugin Manager - Plug-
@@ -174,3 +178,4 @@ let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_post_args="--max-line-length=120"
 let g:pymode_lint_ignore = "E501,W"
 " ----------------------
+

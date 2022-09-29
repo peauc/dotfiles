@@ -1,1 +1,1 @@
-/home/peauc/.local/share/broot/launcher/fish/br.fish
+/Users/clementpeau/Library/Application Support/org.dystroy.broot/launcher/fish/br.fish
